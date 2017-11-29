@@ -3,6 +3,7 @@ const request = require('request');
 const http = require('http');
 const validator = require("email-validator");
 
+const port = process.env.PORT || 3000;
 const config = require('./config.json')
 
 
@@ -44,4 +45,4 @@ app.post('/', function(req, res) {
     }
 });
 
-app.listen(3000, () => console.log('App listening on port 3000!'))
+app.listen(port, () => console.log(`App listening on port ${port}!`))
