@@ -28,7 +28,7 @@ app.post('/', function(req, res) {
     var mail = req.body.mail;
 
     if (validator.validate(mail)) {
-      request(`https://slack.com/api/api.test?token=${config.token}`
+      request(`https://slack.com/api/users.admin.invite?token=${config.token}&email=${mail}`
         , function(error, response, body) {
         console.log('error:', error); // Print the error if one occurred
         console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
