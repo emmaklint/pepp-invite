@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+
+* {-webkit-font-smoothing: antialiased;}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+    background-color: #464696;
+}
+
+.container-fluid {
+  height: 100vh;
+  width: 100%;
+  background-color: #464696;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.btn-primary {
+  color: black;
+  background-color: white;
+  border-color: white;
+  font-weight: 900;
+}
+
+.text {
+font-weight: 700;
+font-size: 2.5em;
+color: #FFFFFF;
+letter-spacing: 0;
+line-height: 120%;
+
+}
+
+.hi {
+font-weight: 900;
+font-size: 6em;
+color: #FFFFFF;
+letter-spacing: 0;
+}
+
+input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 5px solid white;
+  color: white;
+  font-size: 40px;
+}
+
+input, select, textarea{
+    color: white;
+    font-style: italic;
+    font-size: 40px;
+    width: 500px;
+
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color: white;
+   font-size: 40px;
+
+}
+
+textarea:focus, input:focus {
+    color: white;
+    font-style: italic;
+    font-size: 40px;
+
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  margin-top: 50px;
+}
+
+.redFeedback {
+  color: #FE4A4A;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.whiteFeedback {
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.placeholder {
+  min-height: 7vh;
+}
+
+#noMail {
+  display: none;
+}
+
+#success {
+  display: none;
+}
+
+
+#submit {
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 50px;
+  font-family: inherit;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  letter-spacing: 2.5px;
+  cursor: pointer;
+  background: none;
+
+  position: relative;
+  display: inline-block;
+  padding: 12px 30px;
+  border: 5px solid white;
+  color: white;
+  text-transform: uppercase;
+  -webkit-transition: color .5s;
+          transition: color .5s;
+}
+
+#submit:before {
+  content: '';
+   position: absolute;
+   top: 0; left: 0;
+   width: 100%; height: 100%;
+   background: purple;
+   z-index: -1;
+   -webkit-transform:scaleX(0);
+       -ms-transform:scaleX(0);
+           transform:scaleX(0);
+   -webkit-transition: -webkit-transform .5s;
+           transition:         transform .5s;
+}
+
+#submit:hover {
+  color: #464696;
+  background-color: white;
+}
+
+#submit:hover:before {
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+          border-radius: 50px;
+}
