@@ -34,11 +34,20 @@ line-height: 120%;
 
 }
 
+.problem {
+  padding-top: 5vh;
+}
+
 .hi {
 font-weight: 900;
 font-size: 6em;
 color: #FFFFFF;
 letter-spacing: 0;
+}
+
+a {
+  color: white;
+  text-decoration: underline;
 }
 
 input {
@@ -55,7 +64,6 @@ input, select, textarea{
     font-style: italic;
     font-size: 40px;
     width: 500px;
-
 }
 
 ::placeholder { /* Most modern browsers support this now. */
@@ -72,9 +80,18 @@ textarea:focus, input:focus {
 }
 
 .logo {
-  width: 150px;
-  height: 150px;
-  margin-top: 50px;
+  width: 10em;
+  height: 10em;
+}
+
+@media screen and (max-width: 1000px) {
+  .logo {
+    width: 20em;
+    height: 20em;
+  }
+  input, select, textarea{
+      width: 60vw;
+  }
 }
 
 .redFeedback {

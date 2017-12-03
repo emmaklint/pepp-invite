@@ -3,33 +3,37 @@
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" href="./stylesheet.css">
+  <link rel="shortcut icon" type="image/png" href="./img/logo.png"/>
+<link rel="shortcut icon" type="image/png" href="http://eg.com/favicon.png"/>
   <title>Pepp Slack</title>
 </head>
 
 <body>
   <div class="container-fluid d-flex flex-column justify-content-center align-items-left">
-    <div class="row">
-      <div><p class="hi">HEJ!</p></div>
+    <div>
+      <p class="hi">HEJ!</p>
     </div>
-    <div class="row">
-      <p class="text">Vi vill gärna att du som nuvarande eller tidigare engagerad i Pepp blir en del av vårt team på Slack. Där kan du nätverka med andra från Pepp, få reda på det senaste och hjälpa oss att driva organisationen framåt! En gång Pepp - alltid Pepp!<br><br>Fyll i din mailadress så får du en inbjudan till din mail:</p>
-
+      <div class="p-2">
+      <p class="text">Vi vill gärna att du som nuvarande eller tidigare engagerad i Pepp blir en del av vårt team på Slack. Där kan du nätverka med andra från Pepp, få reda på det senaste och hjälpa oss att driva organisationen framåt!<br><br>Fyll i din mailadress så får du en inbjudan till din mail:</p>
     </div>
-    <div class="row">
+    <div>
       <div class="input-group">
         <input type="text" id="mail" placeholder="Din mailadress" aria-label="Mailadress">
       </div>
     </div>
-    <div class="row">
+    <div>
       <button id="submit" type="button" class="button" onclick="submit()">Skicka</button>
     </div>
-    <div class="row placeholder">
+    <div class="placeholder">
       <span id="noMail"><p class="redFeedback">Något gick fel, kolla så du skrev rätt mailadress.</p></span>
       <span id="success"><p class="whiteFeedback">En inbjudan har skickats till <span id="mailString">mil</span></p></span>
     </div>
     <div class="row d-flex justify-content-center align-content-center">
       <img class="logo" src="./img/logo.png"/>
     </div>
+    <div class="d-flex problem justify-content-center align-content-center">
+      <p>Problem eller frågor? Maila <a href="mailto:styrelsen@blipepp.nu">styrelsen@blipepp.nu</p>
+      </div>
 
   </div>
 </body>
